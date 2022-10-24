@@ -1,5 +1,5 @@
 import Home from "./components/Home"
-import navbar from "./components/Navbar"
+import Navbar from "./components/Navbar"
 
 function App() {
     return (
@@ -10,3 +10,5 @@ function App() {
         </>
     )
 }
+
+export default App
