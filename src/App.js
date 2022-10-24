@@ -1,5 +1,6 @@
 import Home from "./components/Home"
-import navbar from "./components/Navbar"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
     return (
@@ -10,3 +11,5 @@ function App() {
         </>
     )
 }
+
+export default App
