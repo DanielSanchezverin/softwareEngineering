@@ -1,0 +1,11 @@
+img {  
+    object-fit: cover;  
+}  
+
+.box-logo-navbar {
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+}
