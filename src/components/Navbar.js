@@ -12,7 +12,7 @@ const Navbar = () => {
     navigate("/")
   }
   function handleGoToService(){
-    navigate("/services")
+    navigate("/service")
   }
   function handleGoToContact(){
     navigate("/Contact")
