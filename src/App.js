@@ -4,14 +4,13 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "@mui/material/styles";
 import mainTheme from "./themes/default";
 import "./App.css"
+import Routing from "./router/Routing";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={mainTheme}>
-        <Navbar />
-        <Home />
-        <Footer />
+        <Routing/>
       </ThemeProvider>
     </>
   );

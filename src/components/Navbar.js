@@ -7,16 +7,17 @@ import Button from "@mui/material/Button";
 
 const navItems = ["Home", "Services", "Contact"];
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <AppBar component="nav" color="background">
+    <AppBar component="nav" color="background" position="static">
       <Toolbar>
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-        >
-          MUI
+          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+          <Button variant="contained" color="background">
+            <img src="/images/logo.png" style={{width: "180px",height: "55px"}} alt="logo.png"></img>
+          </Button>
         </Typography>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navItems.map((item) => (
@@ -31,4 +32,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
