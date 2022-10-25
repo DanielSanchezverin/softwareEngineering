@@ -5,11 +5,11 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
-const Home = () => {
-const navigate= useNavigate()
-function handleGoToService(){
-  navigate("/services")
-}
+const HomeLayout = () => {
+  const navigate = useNavigate()
+  function handleGoToService(){
+    navigate("/services")
+  }
 
   return (
     <div
@@ -21,16 +21,14 @@ function handleGoToService(){
       }}>
       <Grid container style={{ height: "100%" }}>
         <Grid item xs={6} style={{ height: "100%" }}>
-          <div
-            style={{
+          <div style={{
               height: "100%",
               width: "100%",
               display: "flex",
               flexDirection:"column",
               justifyContent: "center",
               paddingLeft:"30px"
-            }}
-          >
+            }}>
             <Typography variant="h1" fontWeight="800" color="white">
               Bienvenido a nuestra página web.
             </Typography>
@@ -50,4 +48,4 @@ function handleGoToService(){
   );
 };
 
-export default Home;
+export default HomeLayout;

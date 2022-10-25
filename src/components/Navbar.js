@@ -4,10 +4,20 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-
-const navItems = ["Home", "Services", "Contact"];
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate()
+  function handleGoToHome(){
+    navigate("/")
+  }
+  function handleGoToService(){
+    navigate("/services")
+  }
+  function handleGoToContact(){
+    navigate("/Contact")
+  }
+
   return (
     <AppBar component="nav" color="background" position="static">
       <Toolbar>
@@ -20,11 +30,9 @@ const Navbar = () => {
           </Button>
         </Typography>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          {navItems.map((item) => (
-            <Button key={item} sx={{ color: "#fff", marginRight: "50px" }}>
-              {item}
-            </Button>
-          ))}
+        <Button sx={{ color: "#fff", marginRight: "50px" }} onClick={handleGoToHome}>Home</Button>
+          <Button sx={{ color: "#fff", marginRight: "50px" }} onClick={handleGoToService}>Services</Button>
+          <Button sx={{ color: "#fff", marginRight: "50px" }} onClick={handleGoToContact}>Contact</Button>
           <Button variant="contained" color="primary">Iniciar sesión</Button>
         </Box>
       </Toolbar>

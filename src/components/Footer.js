@@ -1,24 +1,21 @@
 import React from "react";
-import { Grid } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { AppBar, Toolbar, Box, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <div
-          style={{
-            backgroundColor: "#000000",
-            height: "50px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Typography variant="h6" color="white">The footer.</Typography>
-        </div>
-      </Grid>
-    </Grid>
+    <AppBar component="nav" color="background" position="static">
+      <Toolbar>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+            <img src="/images/logo_icon.png" style={{width: "63px",height: "61px"}} alt="logo_icon.png"></img>
+        </Typography>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          © 2022 Consultoria Agroindustrial. All rights reserved.
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 
