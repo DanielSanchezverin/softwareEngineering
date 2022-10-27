@@ -30,17 +30,16 @@ const HomeLayout = () => {
               width: "100%",
               display: "flex",
               flexDirection:"column",
-              justifyContent: "center",
-            }}>
-            <Typography variant="h2" fontWeight="700" color="white">
-              Bienvenido a nuestra página web.
-            </Typography>
-            <Typography variant="h6" fontWeight="500" color="primary">
-              Aquí podrás ver y agendar tus pagos.
-            </Typography>
-            <div>
-            <Button variant="contained" color="secondary"size="large" style={{marginTop:"20px"}} onClick={handleGoToService}>Servicios</Button>
-            </div>
+              justifyContent: "center"}}>
+              <Typography variant="h2" fontWeight="700" color="white">
+                Bienvenido a nuestra página web.
+              </Typography>
+              <Typography variant="h6" fontWeight="500" color="primary">
+                Aquí podrás ver y agendar tus pagos.
+              </Typography>
+              <div>
+                <Button variant="contained" color="secondary"size="large" style={{marginTop:"20px"}} onClick={handleGoToService}>Servicios</Button>
+              </div>
           </div>
         </Grid>
         <Grid item xs={6} style={{ height: "100%"}}>
