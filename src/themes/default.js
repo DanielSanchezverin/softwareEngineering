@@ -8,8 +8,8 @@ let mainTheme = createTheme({
       contrastText: "black",
     },
     secondary: {
-      main: "#087E8B",
-      contrastText: "white",
+      main: "#3DD47E",
+      contrastText: "black",
     },
     background: {
       main: "#000000",
