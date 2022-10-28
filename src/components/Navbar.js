@@ -25,7 +25,7 @@ const Navbar = () => {
           variant="h6"
           component="div"
           sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-          <Button variant="contained" color="background">
+          <Button variant="contained" color="background" onClick={handleGoToHome}>
             <img src="/images/logo.png" style={{width: "180px",height: "55px"}} alt="logo.png"></img>
           </Button>
         </Typography>

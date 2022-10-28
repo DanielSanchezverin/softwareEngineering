@@ -1,7 +1,7 @@
 import { Grid, Typography, Button } from '@mui/material'
 import React from 'react'
 
-const ServiceLayout = () => {
+const ContactLayout = () => {
   return (
     <div style={{
       margin: "0 0 0 0",
@@ -60,4 +60,4 @@ const ServiceLayout = () => {
   );
 };
 
-export default ServiceLayout
+export default ContactLayout
