@@ -55,7 +55,7 @@ const ServiceLayout = () => {
               </div>
             </Grid>
             <Grid item xs={6} style={{ height: "100%"}}>
-                <img src="/images/SanitizacionImage.png" alt='Cotizacion'></img>
+                <img src="/images/ServiceImage.png" alt='Services'></img>
             </Grid>
         </Grid>
     </div>

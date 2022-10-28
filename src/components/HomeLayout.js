@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const HomeLayout = () => {
   const navigate = useNavigate()
   function handleGoToService(){
-    navigate("/services")
+    navigate("/service")
   }
 
   return (
@@ -16,7 +16,7 @@ const HomeLayout = () => {
       style={{
         margin: "0 0 0 0",
         backgroundColor: "#000000",
-        height: "calc(100vh - 139px)",
+        height: "calc(100vh - 100px)",
         border: "1px solid #FF7A00"
       }}>
       <Grid container style={{ height: "100%",
@@ -47,6 +47,32 @@ const HomeLayout = () => {
             display:"block",
             height: "95%"
           }}></img>
+        </Grid>
+        <Grid container style={{ height: "100%", width: "100%"}}>
+        <Grid item xs={6} style={{ height: "100%"}}>
+          <img src="/images/header.png" alt="Heade image" style={{
+            display:"block",
+            height: "95%"
+          }}></img>
+        </Grid>
+        <Grid item xs={6} style={{ height: "100%" }}>
+          <div style={{
+              height: "100%",
+              width: "100%",
+              display: "flex",
+              flexDirection:"column",
+              justifyContent: "center"}}>
+              <Typography variant="h2" fontWeight="700" color="white">
+                Bienvenido a nuestra página web.
+              </Typography>
+              <Typography variant="h6" fontWeight="500" color="primary">
+                Aquí podrás ver y agendar tus pagos.
+              </Typography>
+              <div>
+                <Button variant="contained" color="secondary"size="large" style={{marginTop:"20px"}} onClick={handleGoToService}>Servicios</Button>
+              </div>
+          </div>
+        </Grid>
         </Grid>
       </Grid>
     </div>
