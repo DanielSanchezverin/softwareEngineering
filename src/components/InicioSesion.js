@@ -12,7 +12,9 @@ const InicioSesion = () => {
   };
 
   return (
-    <div>InicioSesion</div>
+    <div>
+      
+    </div>
   )
 }
 
